@@ -1,0 +1,49 @@
+<div class="backtest-4">
+<div style="text-align: left">
+<p *ngIf="loginStatus">
+  <span class="welcomebar">Welcome to my favourite page :) ! Login by User : {{user}} !</span>
+  <a class="routerlink" routerLink="/"> GO BACK TO HOME PAGE</a>
+</p>
+<p *ngIf="!loginStatus">
+  Please login first!
+  <a routerLink="/"> GO BACK TO HOME PAGE</a>
+</p>
+</div>
+<div id="myCarousel" class="carousel slide" style="height: 650px">
+  <!-- 轮播（Carousel）指标 -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <!-- <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li> -->
+  </ol>
+  <!-- 轮播（Carousel）项目 -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img [src]="favorite.length > 0 ? favorite[0].imagePath : '../../assets/orange1.jpg'" alt="First slide" style="height: 650px ; width: 100%">
+    </div>
+    <div class="item" style=" background-size:180%;">
+      <img [src]="favorite.length > 1 ? favorite[1].imagePath : '../../assets/chicken1.jpg'" alt="Second slide" style="height: 650px ; width: 100%">
+    </div>
+    <div class="item" style=" background-size:220%;">
+      <img [src]="favorite.length > 2 ? favorite[2].imagePath : '../../assets/candy1.jpg'" alt="Third slide" style="height: 650px ; width: 100%">
+    </div>
+    <!-- <div class="item" style=" background-size:120%;">
+      <img src="../../assets/tuna1.jpg" alt="Forth slide" style="height: 650px ; width: 100%">
+    </div>
+    <div class="item" style=" background-size:120%;">
+      <img src="../../assets/vagetable1.jpg" alt="Fifth slide" style="height: 650px ; width: 100%">
+    </div> -->
+  </div>
+  <!-- 轮播（Carousel）导航 -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>

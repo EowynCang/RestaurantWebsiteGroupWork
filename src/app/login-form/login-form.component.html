@@ -1,0 +1,64 @@
+<header class="welcome">
+  <h1 class="welcometxt">Welcome to online yummy yummy restaurant !</h1>
+</header>
+
+<div class="backgroud">
+
+  <div class="kuang">
+
+    <form (submit)="loginUser($event)" class="form" row>
+
+
+      <div class="container1">
+        <label class="text"><b>Username &nbsp;&nbsp;:</b></label>
+        <input type="text" placeholder="Enter Username">
+      </div>
+
+      <div class="container2">
+        <label class="text"><b>Password &nbsp;&nbsp;&nbsp;:</b></label>
+        <input type="password" placeholder="Enter Password">
+      </div>
+
+      <div class="container3">
+        <input class="inputClasss" type="submit" value="Press to Login">
+        <!-- <span class="psw">Forgot <a data-toggle="modal" data-target="#myModal2" href="#">password?</a></span> -->
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Verify Password</h4><br>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="text">
+          <b>Enter your username </b><br><input><br><br>
+          <b>Enter your email address </b><br><input><br><br>
+          <b>Enter verification code </b><br><input><br><br>
+          <b>New Password</b><br><input><br><br>
+          <b>Confirm your password</b><br><input><br><br>
+          <br><br><br><br>
+          <button style="border-color: #cccccc; opacity: 0.7" class="btn btn-default btn-light">Submit
+          </button>
+        </div>
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal" style="border-color: #cccccc; opacity: 0.7">
+          Close
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
